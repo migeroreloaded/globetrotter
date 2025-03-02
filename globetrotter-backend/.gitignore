@@ -1,0 +1,35 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual Environment
+venv/
+env/
+
+# Flask instance and database files
+instance/
+*.db
+*.sqlite
+
+# dotenv environment variable files
+.env
+
+# IDE and editor specific files
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+*.coverage
+*.coverage.*
+.coverage*
+
+# Test output
+nosetests.xml
+coverage.xml
+*.cover
