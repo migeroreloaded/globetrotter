@@ -7,3 +7,4 @@ ollama
 pytest
 pytest-flask
 Flask-WTF
+gunicorn
