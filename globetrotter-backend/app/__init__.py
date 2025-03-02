@@ -15,11 +15,6 @@ def create_app():
     CORS(app)
 
     from app.routes import routes
-    app.register_blueprint(routes)
-
-    # with app.app_context():
-    #     db.create_all()  # Ensure tables exist
-    #     from app.utils import populate_database
-    #     populate_database()  # Auto-seed database
+    app.register_blueprint(routes) 
 
     return app
