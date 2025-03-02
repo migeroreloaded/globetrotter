@@ -8,3 +8,4 @@ pytest
 pytest-flask
 Flask-WTF
 gunicorn
+psycopg2
