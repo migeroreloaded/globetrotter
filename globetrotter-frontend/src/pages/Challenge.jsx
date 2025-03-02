@@ -17,7 +17,7 @@ function Challenge() {
     setLoading(true); // Set loading to true while request is in progress
 
     try {
-      const response = await axios.post("http://localhost:5000/challenge", { username });
+      const response = await axios.post("https://globetrotter-j9g8.onrender.com/challenge", { username });
 
       if (response.data.invite_link) {
         setShareableLink(response.data.invite_link); // Correctly setting the invite link

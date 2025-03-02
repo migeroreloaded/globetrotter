@@ -7,7 +7,7 @@ function Register() {
 
   const handleRegister = async () => {
     try {
-      const response = await axios.post("http://localhost:5000/user/register", { username });
+      const response = await axios.post("https://globetrotter-j9g8.onrender.com/user/register", { username });
       setMessage(response.data.message);
 
       // Store username in session storage upon successful registration

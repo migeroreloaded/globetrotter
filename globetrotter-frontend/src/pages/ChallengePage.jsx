@@ -19,7 +19,7 @@ function ChallengePage() {
     setMessage("");
 
     try {
-      const response = await axios.post("http://localhost:5000/challenge/accept", {
+      const response = await axios.post("https://globetrotter-j9g8.onrender.com/challenge/accept", {
         invite_id: id,
         username: username
       });

@@ -16,7 +16,7 @@ function Game() {
 
   const fetchQuestion = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/game/question");
+      const response = await axios.get("https://globetrotter-j9g8.onrender.com/game/question");
       setQuestion(response.data);
       setFeedback(null);
       setFunFact(null);
@@ -32,7 +32,7 @@ function Game() {
 
     const username = sessionStorage.getItem("username");
 
-    const response = await axios.post("http://localhost:5000/game/answer", {
+    const response = await axios.post("https://globetrotter-j9g8.onrender.com/game/answer", {
       answer,
       destination_id: question.destination_id,
       username
